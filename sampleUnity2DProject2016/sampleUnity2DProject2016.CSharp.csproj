@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Dungeon Art Pack\AnimateSprite.cs" />
-    <Compile Include="Assets\GameSys.cs" />
+    <Compile Include="Assets\GameSystem.cs" />
     <Compile Include="Assets\Tile.cs" />
   </ItemGroup>
   <ItemGroup>

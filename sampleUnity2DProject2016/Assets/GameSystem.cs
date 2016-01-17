@@ -1,17 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameSys : MonoBehaviour {
+public class GameSystem : MonoBehaviour {
 
     public GameObject holdObj;
     public float holdPositionX;
     public float holdPositionY;
     private float z = 10f;
+    private GameObject[] tileSet;
 
     // Use this for initialization
     void Start()
     {
-
+        SetTileSet();
     }
 
     // Update is called once per frame
@@ -78,6 +79,11 @@ public class GameSys : MonoBehaviour {
             holdObj.transform.position = new Vector3(holdPositionX, holdPositionY, z);
             holdObj = null;
         }
+    }
+
+    private void SetTileSet()
+    {
+        tileSet = GameObject.FindGameObjectsWithTag("tile");
     }
 
 }
